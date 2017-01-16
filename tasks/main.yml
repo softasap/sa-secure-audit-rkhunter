@@ -1,0 +1,4 @@
+---
+# tasks file for sa-secure-audit-rkhunter
+
+  - include: tasks_rkhunter.yml

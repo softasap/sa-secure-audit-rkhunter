@@ -1,0 +1,6 @@
+[submodule "roles/sa-postfix"]
+        path = roles/sa-postfix
+        url = https://github.com/softasap/sa-postfix.git
+[submodule "roles/sa-secure-audit-rkhunter"]
+        path = roles/sa-secure-audit-rkhunter
+        url = https://github.com/softasap/sa-secure-audit-rkhunter.git
