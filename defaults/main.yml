@@ -1,2 +1,5 @@
 ---
 # defaults file for sa-secure-audit-rkhunter
+
+# by default they are present in .daily & .weekly; Check first.
+option_force_updatescan_cron: false

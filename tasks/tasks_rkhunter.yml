@@ -11,6 +11,7 @@
           user="root"
           job="rkhunter --update --cronjob"
     become: yes
+    when: option_force_updatescan_cron
     tags: rkhunter
 
   - name: RKHunter | Perform nightly scan
@@ -20,4 +21,5 @@
           user="root"
           job="rkhunter --check --cronjob"
     become: yes
+    when: option_force_updatescan_cron
     tags: rkhunter
