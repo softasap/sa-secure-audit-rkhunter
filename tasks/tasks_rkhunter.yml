@@ -4,3 +4,20 @@
     become: yes
     tags: rkhunter
 
+  - name: RKHunter | update definitions cron
+    cron: minute="{{rk_cron_def_minute | default('1')}}" hour="{{rk_cron_def_hour | default('5')}}" weekday="{{rk_cron_def_weekday | default('sun')}}"
+          name="Update rkhunter definitions"
+          cron_file="rkhunter-definitions"
+          user="root"
+          job="rkhunter --update --cronjob"
+    become: yes
+    tags: rkhunter
+
+  - name: RKHunter | Perform nightly scan
+    cron: minute="{{rk_cron_scan_minute | default('00')}}" hour="{{rk_cron_scan_hour | default('4')}}"
+          name="Night rkhunter scan"
+          cron_file="rkhunter-scan"
+          user="root"
+          job="rkhunter --check --cronjob"
+    become: yes
+    tags: rkhunter
