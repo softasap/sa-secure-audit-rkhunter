@@ -1,0 +1,8 @@
+exclude_paths:
+  - ./box-example
+parseable: true
+quiet: true
+skip_list:
+  - skip_linting
+use_default_rules: true
+verbosity: 1
