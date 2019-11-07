@@ -1,3 +1,8 @@
 box-example/roles
 *.retry
 tempfile
+local*.sh
+.idea
+__pycache__/
+**/*/__pycache__
+*.pyc
