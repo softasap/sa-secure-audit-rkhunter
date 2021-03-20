@@ -35,7 +35,7 @@ idna==2.7
 importlib-metadata==0.19
 importlib-resources==1.0.2
 ipaddress==1.0.22
-Jinja2==2.10.3
+Jinja2==2.11.3
 jinja2-time==0.2.0
 MarkupSafe==1.1.1
 mccabe==0.6.1
