@@ -54,7 +54,7 @@ poyo==0.5.0
 pre-commit==1.18.3
 psutil==5.4.6
 ptyprocess==0.6.0
-py==1.8.0
+py==1.10.0
 pycodestyle==2.5.0
 pycparser==2.19
 pyflakes==2.1.1
